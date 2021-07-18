@@ -4,6 +4,8 @@
 .iml
 .ipr
 
+# new line
+
 # dependencies
 /node_modules
 /.pnp
