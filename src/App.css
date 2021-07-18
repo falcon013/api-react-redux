@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+    width: 100px;
+    height: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toggle button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #171e42;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:#171e42;
+    text-align: center;
+    transition: all 0.2s;
+    margin-left: 0;
+    margin-right: 0;
+}
+.toggle button:hover{
+    color:whitesmoke;
+    background-color:#171e42;
+}
+.toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.toggle p {
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:#171e42;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: stretch;
+    text-align: center;
+    /*border: 2px solid red;*/
 }
 
-.App-link {
-  color: #61dafb;
+.products-cards .card {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px #ccc;
+    color: #171e42;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 300px;
+    height: 340px;
+    /*border: 2px solid teal;*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    /*border: 2px solid yellow;*/
+    height: 170px;
 }
+
+.header {
+    color: #696969;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    flex: 1 1 auto;
+    margin: 0;
+    padding-bottom: 0;
+    /*border: 1px solid coral;*/
+    height: 60px;
+}
+
+.content .price {
+    color: #696969;
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    /*border: 1px solid green;*/
+}
+
+.content .meta {
+    color: #696969;
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    /*border: 1px solid brown;*/
+}
+
+

@@ -1,0 +1,4 @@
+export const TOGGLE_MESSAGE = "TOGGLE_MESSAGE";
+export const GET_PRODUCTS = "GET_PRODUCTS";
+export const GET_PRODUCT = 'GET_PRODUCT';
+export const RESET_PRODUCT = 'RESET_PRODUCT'
